@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fruit Bowl</title>
+</head>
+<body>
+    
+    <!-- Image Map -->
+    <h2>Fruit Bowl</h2>
+    <img class="center" src="img/fructe.jpg" alt="Frui Bowl" usemap="#fruitbowl">
+    <map name="fruitbowl">
+        <area shape="circle" coords="231,104,55" href="https://en.wikipedia.org/wiki/Kiwi" target="_blank" alt="Kiwi">
+        <area shape="circle" coords="394,244,81" href="https://en.wikipedia.org/wiki/Mango" target="_blank" alt="Mango">
+    </map>
+
+    
+    <div class="form-container">
+        <h2>Fruit Bowl</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Fruits:*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="dishes">Preferred Romanian Dishes:</label>
+                <select id="dishes" name="dishes">
+                    <option value="sarmale">Sarmale</option>
+                    <option value="mici">Mici</option>
+                    <option value="mamaliga">Mamaliga</option>
+                    <option value="ciorba_de_perisoare">Ciorba de perisoare</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Events:</label>
+                <table>
+                    <tr>
+                        <td><label for="craciun">Craciun</label></td>
+                        <td><input type="checkbox" id="craciun" name="preferences" value="craciun"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="revelion">Revelion</label></td>
+                        <td><input type="checkbox" id="revelion" name="preferences" value="revelion"></td>
+                    </tr> 
+                </table>
+            </div>
+            <div class="form-group">
+                <label>Special Drinks:</label>
+                <table>
+                    <tr>
+                        <td><label for="sirop_de_afine">Sirop de afine</label></td>
+                        <td><input type="radio" id="sirop_de_afine" name="accommodation" value="sirop_de_afine"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="trandafirata">Trandafirata</label></td>
+                        <td><input type="radio" id="trandafirata" name="accommodation" value="trandafirata"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="socata">Socata</label></td>
+                        <td><input type="radio" id="socata" name="accommodation" value="socata"></td>
+                    </tr>
+                </table>
+            </div>
+                <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any other preferences or comments..."></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div> 
+</body>
+</html>
+    
